@@ -1,0 +1,21 @@
+{
+  "name": "svgaplayer-ssr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/svgaplayer.ssr.js",
+  "typings": "svgaplayer-ssr.d.ts",
+  "scripts": {
+    "build": "node build.js > ./dist/svgaplayer.ssr.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "miniprogram": "dist",
+  "devDependencies": {
+    "@types/node": "^18.14.1",
+    "@types/wechat-miniprogram": "^3.3.0",
+    "browserify": "^17.0.0",
+    "tinyify": "^3.0.0",
+    "tsify": "^5.0.4",
+    "typescript": "^4.3.2"
+  }
+}
