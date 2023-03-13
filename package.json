@@ -1,11 +1,11 @@
 {
-  "name": "svgaplayer-ssr",
-  "version": "1.0.0",
+  "name": "svgaplayer-weapp-ssr",
+  "version": "1.0.1",
   "description": "",
-  "main": "dist/svgaplayer.ssr.js",
+  "main": "dist/svgaplayer.weapp.ssr.js",
   "typings": "svgaplayer-ssr.d.ts",
   "scripts": {
-    "build": "node build.js > ./dist/svgaplayer.ssr.js"
+    "build": "node build.js > ./dist/svgaplayer.weapp.ssr.js"
   },
   "author": "",
   "license": "MIT",

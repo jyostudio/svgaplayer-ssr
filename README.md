@@ -1,4 +1,4 @@
-# svgaplayer-ssr
+# svgaplayer-weapp-ssr
 
 专为 SSR 服务端渲染修改开发的 SVGA 播放器。
 
@@ -10,7 +10,7 @@
 
 ### 原生小程序
 
-1. 直接复制 `./dist/svgaplayer.ssr.js` 到你的小程序工程目录下。
+1. 直接复制 `./dist/svgaplayer.weapp.ssr.js` 到你的小程序工程目录下。
 
 2. 在需要添加播放器的 `wxml` 文件内，添加 `canvas` 组件，注意 canvas 的 id 必填，下一步会用到，type 必须为 2d。
 
@@ -23,7 +23,7 @@
 3. 在需要播放的时机，这里是 `onLoad`，执行以下代码，即可播放动画。
 
 ```js
-const { Parser, Player } = require("../../libs/svgaplayer.ssr"); // 此处替换为 svgaplayer.ssr.js 放置位置
+const { Parser, Player } = require("../../libs/svgaplayer.weapp.ssr"); // 此处替换为 svgaplayer.ssr.js 放置位置
 
 Page({
   data: {
@@ -44,7 +44,7 @@ Page({
 ```
 
 ### 原生小程序（支付宝）
-1. 直接复制 `./dist/svgaplayer.ssr.js` 到你的小程序工程目录下。
+1. 直接复制 `./dist/svgaplayer.weapp.ssr.js` 到你的小程序工程目录下。
 
 2. 由于需要使用到[my.getFileSystemManager](https://opendocs.alipay.com/mini/api/0226oc)相关的API，请先为小程序添加[文件管理器](https://opendocs.alipay.com/mini/introduce/022rw2#%E6%B7%BB%E5%8A%A0%E8%83%BD%E5%8A%9B)能力。添加完毕后需要重新预览方可调用相关API。
 
@@ -69,7 +69,7 @@ Page({
 ```
 
 ```js
-const { Parser, Player } = require("../../libs/svgaplayer.ssr"); // 此处替换为 svgaplayer.weapp.js 放置位置
+const { Parser, Player } = require("../../libs/svgaplayer.weapp.ssr"); // 此处替换为 svgaplayer.weapp.js 放置位置
 
 Page({
   data: {
@@ -99,7 +99,7 @@ Page({
 ```typescript
 import { Component } from 'react'
 import { View, Text, Canvas } from '@tarojs/components'
-import { Parser, Player } from "svgaplayer-ssr";
+import { Parser, Player } from "svgaplayer-weapp-ssr";
 
 import "taro-ui/dist/style/components/button.scss" // 按需引入
 import './index.scss'
